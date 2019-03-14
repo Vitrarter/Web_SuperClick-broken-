@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Четное-нечетное</title>
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block content %}
+{% if number % 2 == 0 %}
+<div>{{ number }} - четное</div>
+{% else %}
+<div>{{ number }} - нечетное</div>
+{% endif %}
+{% endblock %}
+</body>
+</html>
